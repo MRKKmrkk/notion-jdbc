@@ -16,7 +16,7 @@ After doing that you can see a 'Data Sources and Drivers' menu. click the '+' bu
 choose the Class as `org.apache.calcite.jdbc.Driver` and apply it.  
 ![step2](https://github.com/MRKKmrkk/notion-jdbc/blob/main/img/step-2.png)
 
-create model.json on your pc:
+create model.json on your pc specific the internal integration secret that you created before:
 ```json
 {
   "version": "1.0",
@@ -27,7 +27,7 @@ create model.json on your pc:
       "type": "custom",
       "factory": "org.esni.notion.jdbc.adpter.NotionSchemaFactory",
       "operand": { 
-        "token": "Your Notion API Key"
+        "token": "Your Internal Integration Secret"
       }
     }
   ]
