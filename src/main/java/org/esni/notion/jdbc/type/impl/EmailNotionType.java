@@ -1,7 +1,8 @@
-package org.esni.notion.jdbc.type;
+package org.esni.notion.jdbc.type.impl;
 
 import org.apache.calcite.sql.type.SqlTypeName;
 import org.esni.notion.jdbc.model.NotionColumn;
+import org.esni.notion.jdbc.type.AbstractNotionType;
 
 /**
  * Doc: https://developers.notion.com/reference/page-property-values#email
@@ -14,13 +15,13 @@ import org.esni.notion.jdbc.model.NotionColumn;
  *   }
  * }
  */
-public class EmailNotionType extends AbstractNotionType{
+public class EmailNotionType extends AbstractNotionType {
 
     @Override
     public NotionColumn[] listNotionColumns(String name, String colName) {
         return new NotionColumn[]{
-                getIDNotionColumn(name, colName),
-                new NotionColumn(colName, SqlTypeName.VARCHAR, String.format("$.%s.email", name))
+//                getIDNotionColumn(name, colName),
+                new NotionColumn(colName, SqlTypeName.VARCHAR, String.format("$.['%s'].['email']", name))
         };
     }
 

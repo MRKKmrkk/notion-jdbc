@@ -1,7 +1,8 @@
-package org.esni.notion.jdbc.type;
+package org.esni.notion.jdbc.type.impl;
 
 import org.apache.calcite.sql.type.SqlTypeName;
 import org.esni.notion.jdbc.model.NotionColumn;
+import org.esni.notion.jdbc.type.AbstractNotionType;
 
 /**
  * Doc: https://developers.notion.com/reference/page-property-values#created-time
@@ -14,13 +15,13 @@ import org.esni.notion.jdbc.model.NotionColumn;
  *   }
  * }
  */
-public class CreatedTimeNotionType extends AbstractNotionType{
+public class CreatedTimeNotionType extends AbstractNotionType {
 
     @Override
     public NotionColumn[] listNotionColumns(String name, String colName) {
         return new NotionColumn[]{
-                getIDNotionColumn(name, colName),
-                new NotionColumn(colName, SqlTypeName.VARCHAR, String.format("$.%s.created_time", name))
+//                getIDNotionColumn(name, colName),
+                new NotionColumn(colName, SqlTypeName.VARCHAR, String.format("$.['%s'].['created_time']", name))
         };
     }
 

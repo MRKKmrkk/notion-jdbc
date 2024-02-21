@@ -12,7 +12,6 @@ import org.esni.notion.jdbc.util.NotionTypes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -39,9 +38,6 @@ public class NotionDatabaseModel {
         model.addMetaColumn("_CREATED_BY_OBJECT", SqlTypeName.VARCHAR, "$.created_by.object");
         model.addMetaColumn("_CREATED_BY_ID", SqlTypeName.VARCHAR, "$.created_by.id");
         model.addMetaColumn("_LAST_EDITED_TIME", SqlTypeName.VARCHAR, "$.last_edited_time");
-//        model.addMetaColumn("_TITLE", SqlTypeName.VARCHAR, "$.title");
-//        model.addMetaColumn("_DESCRIPTION", SqlTypeName.VARCHAR, "$.description");
-//        model.addMetaColumn("_IS_INLINE", SqlTypeName.BOOLEAN, "$.is_inline");
         model.addMetaColumn("_PARENT", SqlTypeName.VARCHAR, "$.parent");
         model.addMetaColumn("_URL", SqlTypeName.VARCHAR, "$.url");
         model.addMetaColumn("_PUBLIC_URL", SqlTypeName.VARCHAR, "$.public_url");
