@@ -10,9 +10,11 @@ Before you start, you need to [create a notion integration](https://www.notion.s
 
 Enter data grip and double click the 'shift' button. Type 'Driver' into your command bar.
 select the 'Driver' option.  
+![step1](https://github.com/MRKKmrkk/notion-jdbc/blob/main/img/step-1.png)
 
 After doing that you can see a 'Data Sources and Drivers' menu. click the '+' button and choose notion-jdbc's jar file to the right place,
-choose the Class as 'org.apache.calcite.jdbc.Driver' and apply it.
+choose the Class as 'org.apache.calcite.jdbc.Driver' and apply it.  
+![step2](https://github.com/MRKKmrkk/notion-jdbc/blob/main/img/step-2.png)
 
 create model.json on your pc:
 ```json
@@ -32,7 +34,9 @@ create model.json on your pc:
 }
 ```
 Click 'Create Data Source' button on 'Data Sources and Drivers' menu,
-set up the URL as `jdbc:calcite:model=path_of_your_model.json`.click apply button and now you can enjoy notion-jdbc on data grip.(all of your table name is your notion database's title but replace space to the '_')
+set up the URL as `jdbc:calcite:model=path_of_your_model.json`.click apply button and now you can enjoy notion-jdbc on data grip.(all of your table name is your notion database's title but replace space to the '_')  
+![step3](https://github.com/MRKKmrkk/notion-jdbc/blob/main/img/step-3.png)
+
 
 
 
