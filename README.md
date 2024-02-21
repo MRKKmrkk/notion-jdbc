@@ -16,7 +16,7 @@ After doing that you can see a 'Data Sources and Drivers' menu. click the '+' bu
 choose the Class as `org.apache.calcite.jdbc.Driver` and apply it.  
 ![step2](https://github.com/MRKKmrkk/notion-jdbc/blob/main/img/step-2.png)
 
-create model.json on your pc specific the internal integration secret that you created before:
+create model.json on your pc and set the internal integration secret which you created before on model.json :
 ```json
 {
   "version": "1.0",
