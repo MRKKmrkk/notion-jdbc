@@ -12,8 +12,8 @@ Enter data grip and double click the 'shift' button. Type 'Driver' into your com
 select the 'Driver' option.  
 ![step1](https://github.com/MRKKmrkk/notion-jdbc/blob/main/img/step-1.png)
 
-After doing that you can see a 'Data Sources and Drivers' menu. click the '+' button and choose notion-jdbc's jar file to the right place,
-choose the Class as 'org.apache.calcite.jdbc.Driver' and apply it.  
+After doing that you can see a 'Data Sources and Drivers' menu. click the '+' button , [download](https://github.com/MRKKmrkk/notion-jdbc/releases/download/1.0/notion-jdbc-1.0-SNAPSHOT-jar-with-dependencies.jar) and choose notion-jdbc-1.0-SNAPSHOT-jar-with-dependencies.jar to the right place,
+choose the Class as `org.apache.calcite.jdbc.Driver` and apply it.  
 ![step2](https://github.com/MRKKmrkk/notion-jdbc/blob/main/img/step-2.png)
 
 create model.json on your pc:
